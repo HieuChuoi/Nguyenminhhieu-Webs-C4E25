@@ -7,14 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Add food here</h3>
-    <form method="POST">
-        <label>Title</label>
-        <input type="text" name="title">
-
-        <Label>Link</Label>
-        <input type="text" name="link">
-        <button>Submit</button>
-    </form>
+    <h2>{{ food.title }}</h2>
+    <img src="{{ food.link }}" alt="{{ food.title }}">
 </body>
 </html>

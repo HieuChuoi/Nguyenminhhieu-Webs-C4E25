@@ -40,9 +40,14 @@ f_objects = Food.objects()  # lazy loading  # same as list
 # f.delete()
 
 # delete by id
+# f = f_objects.with_id("5c4d7df7adc4772af8987e1f")
+# if f != None:
+#     f.delete()
+#     print("OK")
+# else:
+#     print("Not Found")
+
 f = f_objects.with_id("5c4d7df7adc4772af8987e1f")
-if f != None:
-    f.delete()
-    print("OK")
-else:
-    print("Not Found")
+
+print(f.title)
+print(f.link)
